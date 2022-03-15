@@ -1,0 +1,7 @@
+#focus_input:focus + #focus_label {
+  display: none;
+}
+
+#check_input:checked + #check_label {
+  display: none;
+}

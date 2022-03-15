@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <h2>Regular Css Class</h2>
+      <div>
+        <input
+          id="focus_input"
+          data-testid="focus_input"
+          type="text"
+          defaultValue="Focus me"
+        />{" "}
+        <label id="focus_label" data-testid="focus_label">
+          Focus input to hide
+        </label>
+      </div>
+      <div>
+        <input id="check_input" data-testid="check_input" type="checkbox" />{" "}
+        <label id="check_label" data-testid="check_label">
+          Check checkbox to hide
+        </label>
+      </div>
+    </section>
   );
 }
-
-export default App;
